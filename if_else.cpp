@@ -2,21 +2,24 @@
 using namespace std;
 int main()
 {
-    int a,b;
+    int number;
+    cout << "Enter an integer: ";
+    cin >> number;
 
-    cout<<"a = ";
-    cin>>a;
+    if(number > 0){
+        cout << "You entered a positive number. ";
 
-    cout<<"b = ";
-    cin>>b;
+    }
 
-    if(a>b){
-        cout<<"a is greater than b.";
-    
+    else if (number < 0){
+        cout << "You entered a negative number. ";
     }
 
     else{
-        cout<<"b is greater than b.";
+        cout << "You entered a zero: " << endl;
     }
+
+    cout << "This line is always printed." << endl;
+
 return 0;
 }
