@@ -1,0 +1,3 @@
+In-depth understanding of IoT devices,
+Network programming and
+C++.

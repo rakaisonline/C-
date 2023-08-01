@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdio>
+#include <string>
+
+using namespace std;
+
+class Device {
+  public:
+    string name;
+    bool state;
+
+    Device(string name) {
+      this->name = name;
+      this->state = false;
+    }
+
+    void turnOn() {
+      state = true;
+      cout << name << " has been turned on." << endl;
+    }
+
+    void turnOff() {
+      state = false;
+      cout << name << " has been turned off." << endl;
+    }
+};
+
+int main() {
+  Device light("Light");
+  Device fan("Fan");
+
+  light.turnOn();
+  fan.turnOff();
+
+  return 0;
+}
