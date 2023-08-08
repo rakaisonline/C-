@@ -1,7 +1,7 @@
 //practice by sr
 //passing by referece using pointers
 
-#include<iostream>
+#include<iostream
 using namespace std;
 
 void swap(int*, int*);
